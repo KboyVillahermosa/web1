@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+            height: 500px;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .box1 {
+            background-color: #00ff00; /* Green */
+            width: 400px;
+            height: 200px;
+        }
+
+        .box2 {
+            background-color: #ff00ff; /* Pink */
+            width: 400px;
+            height: 100px;
+        }
+
+        .box3 {
+            background-color: #ff0000; /* Red */
+            width: 200px;
+            height: 100px;
+        }
+
+        .box4 {
+            background-color: #ffff00; /* Yellow */
+            width: 200px;
+            height: 100px;
+        }
+
+        .box5 {
+            background-color: #0000ff; /* Blue */
+            width: 800px;
+            height: 100px;
+        }
+
+        .box6 {
+            background-color: #006400; /* Dark Green */
+            width: 200px;
+            height: 100px;
+        }
+
+        .box7 {
+            background-color: #ffcccc; /* Light Pink */
+            width: 400px;
+            height: 100px;
+            color: black;
+        }
+
+        .box8 {
+            background-color: #808080; /* Gray */
+            width: 200px;
+            height: 100px;
+        }
+
+        .box9 {
+            background-color: #d3d3d3; /* Light Gray */
+            width: 200px;
+            height: 100px;
+        }
+
+        .box10 {
+            background-color: #f5f5dc; /* Beige */
+            width: 200px;
+            height: 100px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="box1" colspan="2" rowspan="2">Box 1</td>
+            <td class="box2" colspan="2">Box 2</td>
+        </tr>
+        <tr>
+            <td class="box3">Box 3</td>
+            <td class="box4">Box 4</td>
+        </tr>
+        <tr>
+            <td class="box5" colspan="4">Wide Box 5</td>
+        </tr>
+        <tr>
+            <td class="box6">Box 6</td>
+            <td class="box7" colspan="2">Box 7</td>
+            <td class="box8">Box 8</td>
+        </tr>
+        <tr>
+            <td class="box9">Box 9</td>
+            <td class="box10" colspan="3">Box 10</td>
+        </tr>
+    </table>
+</body>
+</html>
